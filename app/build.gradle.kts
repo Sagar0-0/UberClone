@@ -16,7 +16,7 @@ if (localPropertiesFile.exists() && localPropertiesFile.isFile) {
 
 android {
     namespace = "com.sagar.uberclone"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.sagar.uberclone"
@@ -72,4 +72,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.maps.compose)
 }
